@@ -1,0 +1,26 @@
+body{
+    margin: 0 auto;
+}
+.small{
+    width: 150px;
+    height: 150px;
+    margin: 15px 5px;
+
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+  
+  
+
+}
+
+.gallery-big{
+        text-align: center;
+   
+}
+
+.wrap{
+    display: flex;
+  
+}
