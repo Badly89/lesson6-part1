@@ -1,9 +1,17 @@
+var btnPrev = document.querySelector("#prev"),
+    btnNext = document.querySelector("#next"),
+    images = document.getElementsByTagName("img");
+
+
 function init() {
-    var images = document.getElementsByTagName("img");
+
     for (var i = 0; i < images.length; i++) {
         images[i].onclick = changeBigPicture;
     }
+    // nextSlide();
+    // prevSlide();
 }
+
 function changeBigPicture(eventObj) {
     var appDiv = document.getElementById("big_picture");
     appDiv.innerHTML = "";
@@ -15,8 +23,18 @@ function changeBigPicture(eventObj) {
     imageDomElement.style.height = "100vh";
     imageDomElement.style.border = "1px solid brown";
     appDiv.appendChild(imageDomElement);
-    console.log(eventElement);
-    console.log(imageNameParts);
+    //  console.log(imageNameParts);
 
 }
+
+function nextSlide(e) {
+
+}
+
+function prevSlide(e) {
+    console.log("1");
+}
+
+btnPrev.addEventListener('click', prevSlide);
+btnNext.addEventListener('click', nextSlide);
 window.onload = init;

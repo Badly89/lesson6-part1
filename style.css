@@ -1,26 +1,42 @@
-body{
+body {
     margin: 0 auto;
 }
-.small{
+
+.slide {
     width: 150px;
     height: 150px;
     margin: 15px 5px;
 
 }
+
+
 .gallery {
     display: flex;
     justify-content: center;
-  
-  
+    flex-direction: column;
+}
+
+.gallery-big {
+    text-align: center;
 
 }
 
-.gallery-big{
-        text-align: center;
-   
-}
-
-.wrap{
+.wrap {
     display: flex;
-  
+
+
+}
+
+.arrow {
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#arrow-left,
+#arrow-right {
+    font-size: 15px;
+    padding: 15px;
+
 }
